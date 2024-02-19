@@ -1,0 +1,19 @@
+public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.println("Enter Q1:");
+        int a = input.nextInt();
+        System.out.println("Enter Q2:");
+        int b = input.nextInt();
+        System.out.println("Enter Q3:");
+        int c = input.nextInt();
+        
+        int sum;
+        sum = a+b+c;
+        double per;
+        per = sum * .60 ;
+        int quot;
+        quot = sum / 3;
+         System.out.println("Percentage is:" + per);
+        System.out.println("Average is:" + quot);
+    }
+}

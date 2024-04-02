@@ -1,0 +1,116 @@
+HTML!!!!!!!!!!
+
+<html>
+    <head><title>Villegas, Jayson M.</title></head>
+    <body bgcolor = "#55d4b0" >
+        <h1>COMPROG</h1>
+        
+        <h3>Name: Jayson Villegas</h3>
+        <h3>Age: 18</h3>
+        <h3>Strand: ICT</h3>
+        
+        <p>My Hobbies are Watching Anime, Games, And Sleep... </p>
+        
+        <marquee>Watahh!! Watahh!!</marquee>
+        
+        <br>
+        </br>
+        <font face = "Calisto MT" color = "Yellow" size = "5px"><i>c</i></font>
+        <font face = "Times New Roman" color = "Red" size = 15px>C</font>
+        <font face = "Chiller" color = "Green" size = 14px ><i>S</i></font>                 
+        <font face = "Goody" color = "Blue" size = "15px"><u><b>T</b></u></font>
+        
+    </body>
+    </html>
+
+<html>
+    <head><title>Villegas, Jayson M.</title></head>
+    <body bgcolor = "#c27c04" >
+        <h1>HADUKEN!</h1>
+        <h2>HADUKEN!</h2>
+        <h3>HADUKEN!</h3>
+        
+        <p>The Dog Under The table Seems To Be In Pain. Maybe He Needs My HADUKEN!!. </p>
+        
+        <marquee>Watahh!! Watahh!!</marquee>
+        
+        <b>BOLD</b>        
+        <i>ITALIC</i>
+        <U>UNDERLINE</U>
+        <br>
+        </br>
+        <font face = "Old English Text MT">HADUKEN!!</font>
+        <br>
+        </br>
+        <font color = "Indigo">HADUKEN!!</font>
+        <br>
+        </br>
+        </br>
+        <font size = "200px">HADUKEN!!</font>
+        <br>
+          
+    </body>
+    </html>
+
+  JNP...
+  
+/////////////////////////////////////||RANDOM-VARIABLE||///////////////////////////////
+		JButton computer = new JButton("Random");
+		computer.setForeground(new Color(255, 255, 255));
+		computer.setFont(new Font("Trebuchet MS", Font.BOLD, 15));
+		computer.setBackground(new Color(128, 128, 255));
+		computer.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				p2_choice.setBackground(clickedcolor);
+				Random random = new Random();
+				int p2computer = random.nextInt(3);
+				switch (p2computer) {
+				case 0:
+					p2_choice.setText("Rock");
+					break;
+				case 1:
+					p2_choice.setText("Paper");
+					break;
+				case 2:
+					p2_choice.setText("Scissors");
+					break;
+
+				}
+			}
+		});
+  
+events
+
+JButton btnPlay = new JButton("Play");
+		btnPlay.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+
+				if (p1_choice.getText().equalsIgnoreCase("Rock") && p2_choice.getText().equalsIgnoreCase("Rock")) {
+					JOptionPane.showMessageDialog(null, "Draw");
+				} else if (p1_choice.getText().equalsIgnoreCase("Rock")
+						&& p2_choice.getText().equalsIgnoreCase("Paper")) {
+					JOptionPane.showMessageDialog(null, "Player 2 Wins");
+				} else if (p1_choice.getText().equalsIgnoreCase("Rock")
+						&& p2_choice.getText().equalsIgnoreCase("Scissors")) {
+					JOptionPane.showMessageDialog(null, "Player 1 Wins");
+				} else if (p1_choice.getText().equalsIgnoreCase("Paper")
+						&& p2_choice.getText().equalsIgnoreCase("Rock")) {
+					JOptionPane.showMessageDialog(null, "Player 1 Wins");
+				} else if (p1_choice.getText().equalsIgnoreCase("Paper")
+						&& p2_choice.getText().equalsIgnoreCase("Paper")) {
+					JOptionPane.showMessageDialog(null, "Tie");
+				} else if (p1_choice.getText().equalsIgnoreCase("Paper")
+						&& p2_choice.getText().equalsIgnoreCase("Scissors")) {
+					JOptionPane.showMessageDialog(null, "Player 2 Wins");
+				} else if (p1_choice.getText().equalsIgnoreCase("Scissors")
+						&& p2_choice.getText().equalsIgnoreCase("Rock")) {
+					JOptionPane.showMessageDialog(null, "Player 2 Wins");
+				} else if (p1_choice.getText().equalsIgnoreCase("Scissors")
+						&& p2_choice.getText().equalsIgnoreCase("Paper")) {
+					JOptionPane.showMessageDialog(null, "Player 1 Wins");
+				} else if (p1_choice.getText().equalsIgnoreCase("Scissors")
+						&& p2_choice.getText().equalsIgnoreCase("Scissors")) {
+					JOptionPane.showMessageDialog(null, "Tie");
+				} else {
+					JOptionPane.showMessageDialog(null, "Pick your move");
+				}
